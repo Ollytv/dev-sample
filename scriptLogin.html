@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT LOGIN  function</title>
+    <script type="text/javascript">
+    function validateForm(form){
+        var username= document.getElementById('username').value;
+        var email= document.getElementById('email').value;
+        var password= document.getElementById('password').value;
+        if(username==null || username==" " || email==null || email==" " || password==null || password==" "){
+          alert("input valid data");
+          return false;
+        }else{
+            alert('login successful');
+            return true;
+        }
+        }
+       </script>
+       
+    </head>
+<body>
+    <div class="form_wrap">
+        <h3>SIGN-UP</h3>
+        <form method="POST"action=" "name="form">
+            <input type="text"placeholder="username"id="username"name="username"value=" "><br><br>
+            <input type="email"placeholder="email"id="email"name="email"value=" "><br><br>
+            <input type="password"placeholder="password"id="password"name="passsword"value=" "><br><br>
+            <button class="button"name="submit"type="submit"value="submit"onclick="validateForm();return false;">LOGIN</button>
+        </form>
+    </div>
+</body>
+</html>
